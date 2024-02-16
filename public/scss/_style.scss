@@ -18013,14 +18013,27 @@ span.ui-slider-handle.ui-corner-all.ui-state-default:focus-visible,
 }
 .bg-home1 {
   background-image: url(../images/home/1.jpg);
-  -webkit-background-size: cover;
+  -webkit-background-size: contain;
   background-size: cover;
   background-position: center center;
-  height: 800px;
-  @media (min-width: 1920px) {
-    height: 900px;
+  height: 800px; /* Default height for smaller screens */
+}
+
+@media (min-width: 1920px) {
+  .bg-home1 {
+    height: 900px; /* Adjusted height for larger screens */
   }
 }
+
+@media (max-width: 768px) {
+  .bg-home1 {
+    background-size: contain; /* Change background size to contain for smaller screens */
+    background-position: center; /* Let the height be determined by the content */
+    background-repeat: no-repeat;
+    margin-bottom: 1;
+  }
+}
+
 .bg-home2 {
   background-image: url(../images/home/2.jpg);
   -webkit-background-size: cover;

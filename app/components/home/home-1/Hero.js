@@ -3,8 +3,8 @@ import HeroFilter from "../../common/HeroFilter";
 
 const Hero = () => {
   return (
-    <section className="home-one bg-home1">
-      <div className="container">
+    <section className=" bg-home1">
+      {/* <div className="container">
         <div className="row posr">
           <div className="col-lg-10 m-auto">
             <div className="home_content home1_style">
@@ -28,14 +28,14 @@ const Hero = () => {
                 <p className="para"> Affordable Plots For Sale Within Nairobi Metropolis.</p>
               </div>
               <div className="advance_search_panel">
-                {/* <div className="row">
+                <div className="row">
                   <HeroFilter />
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
