@@ -22,7 +22,7 @@ const DefaultHeader = () => {
               height={45}
               className="logo1 img-fluid"
               src="/images/header-logo2.jpg"
-              alt="header-logo.jpg"
+              alt="header-logo2.jpg"
             />
             <Image
               width={140}
