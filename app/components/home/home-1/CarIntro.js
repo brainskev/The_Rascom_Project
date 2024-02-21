@@ -33,9 +33,9 @@ const CarIntro = () => {
         </div>
         {/* End .col-lg-12 */}
 
-        <div className="col-md-9 col-xl-5">
+        <div className="col-md-12 col-xl-9">
           <div className="home1_divider_content">
-            <h2 className="title">We Make Finding Land Simple</h2>
+            <h2 className="title" style={{ color: '#1a3760' }}>We Make Finding Land Simple</h2>
             <p className="para">
               At Rascom what matters to us is making your land search and buying
               experience as simple as possible, so you can find the right land
@@ -44,7 +44,7 @@ const CarIntro = () => {
           </div>
         </div>
         {/* End col-md-9 */}
-      </div>
+      </div >
     </>
   );
 };
