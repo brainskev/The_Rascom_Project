@@ -53,28 +53,30 @@ const FeaturedFilterListing = () => {
                   </>
                 ) : undefined}
 
-                <Image
-                  width={284}
-                  height={183}
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                  }}
-                  priority
-                  src={listing.image}
-                  alt={listing.title}
-                />
+                <Link href="/listing-single-v1">
+                  <Image
+                    width={284}
+                    height={183}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                    priority
+                    src={listing.image}
+                    alt={listing.title}
+                  />
+                </Link>
                 <div className="thmb_cntnt2">
                   <ul className="mb0">
                     <li className="list-inline-item">
-                      <a className="text-white" href="#">
+                      <a className="text-white" href="/listing-single-v1">
                         <span className="flaticon-photo-camera mr3" />{" "}
                         {listing.photosCount}
                       </a>
                     </li>
                     <li className="list-inline-item">
-                      <a className="text-white" href="#">
+                      <a className="text-white" href="/listing-single-v1">
                         <span className="flaticon-play-button mr3" />{" "}
                         {listing.videosCount}
                       </a>
