@@ -1,9 +1,7 @@
 module.exports = [
   {
     label: "Home",
-    subMenu: [
-      { label: "Home v1", path: "/" },
-    ],
+    path: "/",
   },
   // {
   //   label: "Explore",
@@ -26,6 +24,7 @@ module.exports = [
   //     },
   //   ],
   // },
+
   {
     label: "Listings",
     subMenu: [

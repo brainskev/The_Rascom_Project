@@ -15,6 +15,7 @@ import Footer from "@/app/components/common/Footer";
 import Testimonial from "@/app/components/common/Testimonial";
 import Partner from "@/app/components/common/Partner";
 import Counter from "@/app/components/home/home-1/Counter";
+import DefaultHeader from "@/app/components/common/DefaultHeader";
 
 export const metadata = {
   title: "Rascom - Affordable Land For Sale",
@@ -42,7 +43,7 @@ const Home_1 = () => {
       {/* End header top */}
 
       {/* Main Header Nav */}
-      <Header />
+      <DefaultHeader />
       {/* End Main Header Nav */}
 
       {/* Main Header Nav For Mobile */}
