@@ -39,11 +39,11 @@ const ListingV1 = () => {
             {/* End Main Header Nav For Mobile */}
 
             {/* Advance_search_menu_sectn*/}
-            {/* <section className="advance_search_menu_sectn bgc-thm2 pt20 pb0 mt70-992 filter-style_two">
+            <section className="advance_search_menu_sectn pt20 pb0 mt20-992 filter-style_two">
                 <div className="container">
-                    <AdvanceFilter />
+                    {/* <AdvanceFilter /> */}
                 </div>
-            </section> */}
+            </section>
             {/* End Advance_search_menu_sectn*/}
 
             {/* Inner Page Breadcrumb */}
@@ -56,17 +56,6 @@ const ListingV1 = () => {
                                     Our Projects
                                 </h2>
                                 <p className="subtitle">Listed plots</p>
-                                <ol className="breadcrumb fn-sm mt15-sm">
-                                    <li className="breadcrumb-item">
-                                        <a href="#">Home</a>
-                                    </li>
-                                    <li
-                                        className="breadcrumb-item active"
-                                        aria-current="page"
-                                    >
-                                        Listing
-                                    </li>
-                                </ol>
                             </div>
                         </div>
                     </div>

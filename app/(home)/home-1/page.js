@@ -25,9 +25,7 @@ export const metadata = {
 
 const Home_1 = () => {
   return (
-    <div className="wrapper ovh">
-      {/* Sidebar Panel Start */}
-
+    <div className="wrapper">
       <div
         className="offcanvas offcanvas-end"
         tabIndex="-1"
@@ -50,19 +48,10 @@ const Home_1 = () => {
       <MobileMenu />
       {/* End Main Header Nav For Mobile */}
 
+
       {/* Hero */}
       <Hero />
       {/* End Hero */}
-
-      {/* Car Category */}
-      {/* <section className="car-category mobile_space bgc-f9  pb100">
-        <div className="container">
-          <div className="row">
-            <Category />
-          </div>
-        </div>
-      </section> */}
-      {/* End Car Cartegory */}
 
       {/* Featured Product  */}
       <section className="featured-product">
