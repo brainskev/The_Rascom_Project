@@ -100,10 +100,11 @@ const FeaturedFilterListing = () => {
               </div>
               <div className="details">
                 <div className="wrapper">
+                  <h5 className="price">KES. {listing.price}</h5>
                   <h5 className="title">
                     <Link href="/listing-single-v1">{listing.title}</Link>
                   </h5>
-                  <h5 className="price">KES. {listing.price}</h5>
+                  <h5 className="title">Purpose: {listing.para}</h5>
                   <div className="listign_review">
                     <ul className="mb0">
                       {[...Array(5)].map((_, index) => (
