@@ -96,24 +96,17 @@ const PopularListings = () => {
                 </div>
                 <div className="details">
                   <div className="wrapper">
-                    <h5 className="price">Kes. {listing.price}</h5>
-                    <h6 className="title">
+                    <h5 className="price">KES. {listing.price}</h5>
+                    <h5 className="title">
                       <Link href="/listing-single-v1">{listing.title}</Link>
-                    </h6>
+                    </h5>
                     <div className="listign_review">
                       <ul className="mb0">
-                        {[...Array(5)].map((_, index) => (
-                          <li key={index} className="list-inline-item">
-                            <a href="#">
-                              <i className="fa fa-star" />
-                            </a>
-                          </li>
-                        ))}
                         <li className="list-inline-item">
-                          <a href="#">{listing.rating}</a>
+                          <span className="title">Purpose: </span>
                         </li>
                         <li className="list-inline-item">
-                          ({listing.reviewsCount} reviews)
+                          <a href="/listing-single-v1">{listing.para}</a>
                         </li>
                       </ul>
                     </div>
