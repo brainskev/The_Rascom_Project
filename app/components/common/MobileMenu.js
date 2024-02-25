@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 import menuItems from "@/data/menuItems";
 import { isParentActive } from "@/utils/isMenuActive";
 import Image from "next/image";
@@ -130,79 +131,114 @@ const MobileMenu = () => {
                         >
                             <Menu>
                                 {menuItems.map((item, index) => (
-                                    <SubMenu
-                                        key={index}
-                                        className={
-                                            isParentActive(item.subMenu, path)
-                                                ? "active"
-                                                : ""
-                                        }
-                                        label={item.label}
-                                    >
-                                        {item.subMenu.map((subItem, subIndex) =>
-                                            subItem.subMenu ? (
-                                                <SubMenu
-                                                    key={subIndex}
-                                                    label={subItem.label}
-                                                    className={
-                                                        isParentActive(
-                                                            subItem.subMenu,
-                                                            path
-                                                        )
-                                                            ? "active"
-                                                            : ""
-                                                    }
-                                                >
-                                                    {subItem.subMenu.map(
-                                                        (
-                                                            nestedItem,
-                                                            nestedIndex
-                                                        ) => (
-                                                            <MenuItem
-                                                                key={
-                                                                    nestedIndex
-                                                                }
-                                                                component={
-                                                                    <Link
-                                                                        className={
-                                                                            nestedItem.path ==
-                                                                                path
-                                                                                ? "active"
-                                                                                : ""
-                                                                        }
-                                                                        href={
-                                                                            nestedItem.path
-                                                                        }
-                                                                    />
-                                                                }
-                                                            >
-                                                                {
-                                                                    nestedItem.label
-                                                                }
-                                                            </MenuItem>
-                                                        )
-                                                    )}
-                                                </SubMenu>
-                                            ) : (
-                                                <MenuItem
-                                                    key={subIndex}
-                                                    component={
-                                                        <Link
-                                                            className={
-                                                                subItem.path ==
-                                                                    path
-                                                                    ? "active"
-                                                                    : ""
-                                                            }
-                                                            href={subItem.path}
-                                                        />
-                                                    }
-                                                >
-                                                    {subItem.label}
-                                                </MenuItem>
-                                            )
+                                    <React.Fragment key={index}>
+                                        {item.subMenu ? (
+                                            <SubMenu
+                                                className={
+                                                    isParentActive(
+                                                        item.subMenu,
+                                                        path
+                                                    )
+                                                        ? "active"
+                                                        : ""
+                                                }
+                                                label={item.label}
+                                            >
+                                                {item.subMenu.map(
+                                                    (subItem, subIndex) => (
+                                                        <React.Fragment
+                                                            key={subIndex}
+                                                        >
+                                                            {subItem.subMenu ? (
+                                                                <SubMenu
+                                                                    label={
+                                                                        subItem.label
+                                                                    }
+                                                                    className={
+                                                                        isParentActive(
+                                                                            subItem.subMenu,
+                                                                            path
+                                                                        )
+                                                                            ? "active"
+                                                                            : ""
+                                                                    }
+                                                                >
+                                                                    {subItem.subMenu.map(
+                                                                        (
+                                                                            nestedItem,
+                                                                            nestedIndex
+                                                                        ) => (
+                                                                            <MenuItem
+                                                                                key={
+                                                                                    nestedIndex
+                                                                                }
+                                                                                component={
+                                                                                    <Link
+                                                                                        className={
+                                                                                            nestedItem.path ===
+                                                                                                path
+                                                                                                ? "active"
+                                                                                                : ""
+                                                                                        }
+                                                                                        href={
+                                                                                            nestedItem.path
+                                                                                        }
+                                                                                    />
+                                                                                }
+                                                                            >
+                                                                                {
+                                                                                    nestedItem.label
+                                                                                }
+                                                                            </MenuItem>
+                                                                        )
+                                                                    )}
+                                                                </SubMenu>
+                                                            ) : (
+                                                                <MenuItem
+                                                                    key={
+                                                                        subIndex
+                                                                    }
+                                                                    component={
+                                                                        <Link
+                                                                            className={
+                                                                                subItem.path ===
+                                                                                    path
+                                                                                    ? "active"
+                                                                                    : ""
+                                                                            }
+                                                                            href={
+                                                                                subItem.path
+                                                                            }
+                                                                        />
+                                                                    }
+                                                                >
+                                                                    {
+                                                                        subItem.label
+                                                                    }
+                                                                </MenuItem>
+                                                            )}
+                                                        </React.Fragment>
+                                                    )
+                                                )}
+                                            </SubMenu>
+                                        ) : (
+                                            <MenuItem
+                                                key={index}
+                                                component={
+                                                    <Link
+                                                        className={
+                                                            item.path === path
+                                                                ? "active"
+                                                                : ""
+                                                        }
+                                                        href={item.path}
+                                                    />
+                                                }
+                                            >
+                                                {item.label}
+                                            </MenuItem>
                                         )}
-                                    </SubMenu>
+                                    </React.Fragment>
                                 ))}
                             </Menu>
                         </Sidebar>
