@@ -52,7 +52,7 @@ const Home_1 = () => {
       {/* Hero */}
       <Hero />
       {/* End Hero */}
-
+      <HeaderTop />
       {/* Featured Product  */}
       <section className="featured-product">
         <div className="container">
@@ -68,6 +68,7 @@ const Home_1 = () => {
           <div className="row">
             <div className="col-lg-12" data-aos-delay="100" data-aos="fade-up">
               <FeaturedFilterListing />
+              <HeaderTop />
             </div>
           </div>
           {/* End .row */}
@@ -190,7 +191,7 @@ const Home_1 = () => {
       {/* End Our Blog */}
 
       {/* Our Partners */}
-      <section className="our-partner pt0 pb100">
+      {/* <section className="our-partner pt0 pb100">
         <div className="container">
           <div className="row">
             <div className="col-lg-6 offset-lg-3">
@@ -199,16 +200,16 @@ const Home_1 = () => {
               </div>
             </div>
           </div>
-          {/* End .row */}
+         
 
           <div className="partner_divider">
             <div className="row">
               <Partner />
             </div>
-            {/* End .row */}
+          
           </div>
         </div>
-      </section>
+      </section> */}
       {/* End  Our Partners */}
 
       {/* Our Footer */}
