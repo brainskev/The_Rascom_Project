@@ -56,7 +56,7 @@ const BlogDynamicSingle = () => {
                 <div className="details">
                   <div className="wrapper">
                     <h2 className="title">
-                      Win a Mini Electric from Auto Trader
+                    Navigating the Kenyan Real Estate Landscape: A Guide to Buying Land
                     </h2>
                     <Meta />
                   </div>
@@ -100,15 +100,14 @@ const BlogDynamicSingle = () => {
                 <div className="mbp_thumb_post">
                   <h4>Description</h4>
                   <p className="para mb25 mt20">
-                    This July, Auto Trader are giving away a funky Mini Electric
-                    worth £26,000 – plus up to £1,200 towards your car
-                    insurance, covered by Compare the Market.
+                  Welcome, aspiring landowners and savvy investors!
+                  Kenya's real estate market holds immense promise for those looking to secure a piece of this beautiful country for themselves.
+                  Land, in particular, stands as a valuable asset with a myriad of possibilities.
+                  From agricultural ventures to residential developments, the options are vast.
                   </p>
                   <p className="para mb20">
-                    There are no catches or hidden fees – you just have to be
-                    over 18 years old, and a UK resident holding a full UK
-                    driver’s licence. You can check out the full terms and
-                    conditions here.
+                  However, as with any investment, understanding the landscape is key to making informed decisions.
+                  So, let's delve into the world of land ownership in Kenya and explore what it takes to find your perfect plotTh
                   </p>
                   <p className="para mb40">
                     Simply fill in the prize draw form at any time between 1
